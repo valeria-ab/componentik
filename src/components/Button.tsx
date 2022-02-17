@@ -1,20 +1,13 @@
 import React from 'react';
-import './App.css';
+import s from './CommonStyles.module.css'
 
-function App() {
-    const data = {
-        checkbox: false,
-        header: '',
-        body: ''
-    }
-    const onClick = () => {
+function Button(props: {onClick: () => void}) {
 
-    }
     return (
-        <div className="App">
-
+        <div className={s.buttonComponent}>
+            <button className={s.button} onClick={props.onClick}>iOS</button>
         </div>
     );
 }
 
-export default App;
+export default Button;

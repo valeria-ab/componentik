@@ -1,20 +1,16 @@
 import React from 'react';
-import './App.css';
+import Checkbox from './Checkbox';
+import s from './CommonStyles.module.css'
 
-function App() {
-    const data = {
-        checkbox: false,
-        header: '',
-        body: ''
-    }
-    const onClick = () => {
 
-    }
+function Title(props: {title:string}) {
+
     return (
-        <div className="App">
-
+        <div className={s.titleBlock}>
+            <Checkbox/>
+            <span className={s.title}>{props.title}</span>
         </div>
     );
 }
 
-export default App;
+export default Title;

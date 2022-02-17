@@ -1,20 +1,19 @@
 import React from 'react';
-import './App.css';
+import s from './CommonStyles.module.css'
 
-function App() {
-    const data = {
-        checkbox: false,
-        header: '',
-        body: ''
-    }
-    const onClick = () => {
+function Main(props: { body: string }) {
 
-    }
     return (
-        <div className="App">
-
+        <div className={s.main}>
+            <span>{props.body}</span>
+            <span>{props.body}</span>
+            <span>{props.body}</span>
+            <span>{props.body}</span>
+            <span>{props.body}</span>
+            <span>{props.body}</span>
+            <span>{props.body}</span>
         </div>
     );
 }
 
-export default App;
+export default Main;
